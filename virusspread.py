@@ -3,9 +3,6 @@
 import random
 import pylab
 
-''' 
-Begin helper code
-'''
 
 class NoChildException(Exception):
     """
@@ -15,13 +12,7 @@ class NoChildException(Exception):
     modify/add any code.
     """
 
-'''
-End helper code
-'''
 
-#
-# PROBLEM 1
-#
 class SimpleVirus(object):
 
     """
@@ -159,9 +150,6 @@ class Patient(object):
         return len(self.viruses)
 
 
-#
-# PROBLEM 2
-#
 def simulationWithoutDrug(numViruses, maxPop, maxBirthProb, clearProb,
                           numTrials):
     """
@@ -202,9 +190,6 @@ def simulationWithoutDrug(numViruses, maxPop, maxBirthProb, clearProb,
 
 # simulationWithoutDrug(100, 1000, 0.1, 0.05, 100)
 
-#
-# PROBLEM 3
-#
 class ResistantVirus(SimpleVirus):
     """
     Representation of a virus which can have drug resistance.
@@ -420,10 +405,6 @@ class TreatedPatient(Patient):
                 pass
         return len(self.viruses)
 
-
-#
-# PROBLEM 4
-#
 def simulationWithDrug(numViruses, maxPop, maxBirthProb, clearProb, resistances,
                        mutProb, numTrials):
     """
